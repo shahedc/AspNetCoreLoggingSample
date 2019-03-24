@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingWebMvc", "LoggingWebMvc\LoggingWebMvc.csproj", "{3387F75C-EF71-4F64-B028-F61A58F169D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingWebRazor", "LoggingWebRazor\LoggingWebRazor.csproj", "{15F9C81F-15AD-4D36-A811-EB7E5DF21733}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3387F75C-EF71-4F64-B028-F61A58F169D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3387F75C-EF71-4F64-B028-F61A58F169D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3387F75C-EF71-4F64-B028-F61A58F169D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3387F75C-EF71-4F64-B028-F61A58F169D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F9C81F-15AD-4D36-A811-EB7E5DF21733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F9C81F-15AD-4D36-A811-EB7E5DF21733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F9C81F-15AD-4D36-A811-EB7E5DF21733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F9C81F-15AD-4D36-A811-EB7E5DF21733}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7406A05-3021-440C-9759-B9F0DBC577D0}
+	EndGlobalSection
+EndGlobal
