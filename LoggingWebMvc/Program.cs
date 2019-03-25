@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.EventLog;
 
 namespace LoggingWebMvc
 {
@@ -17,8 +18,20 @@ namespace LoggingWebMvc
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+        public static IWebHostBuilder CreateWebHostBuilder(
+           string[] args) => WebHost.CreateDefaultBuilder(args)
+              .UseStartup<Startup>()
+              .ConfigureLogging(logging =>
+              {
+                // clear default logging providers
+                logging.ClearProviders();
+
+                // add built-in providers manually, if desired 
+                logging.AddConsole();
+                logging.AddDebug();
+                logging.AddEventLog();
+                logging.AddEventSourceLogger();
+                //logging.AddTraceSource(sourceSwitchName);
+            });
     }
 }
